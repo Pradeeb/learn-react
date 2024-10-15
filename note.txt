@@ -1,0 +1,5 @@
+1. npx create-react-app <application name>  ==> application creation
+
+2. npm start                                ==> run application
+
+3.
