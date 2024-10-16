@@ -1,12 +1,12 @@
 import './App.css';
+import LearnUsestate from './learning hooks/learn usestate hook/LearnUsestate'
 
 function App() {
   return (
     <div className="App">
-     <h1>hello world</h1>
-     hello
+    <LearnUsestate/>
     </div>
   );
-}
+} 
 
 export default App;
