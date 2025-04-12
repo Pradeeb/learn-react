@@ -1,6 +1,6 @@
 # lean-react
 
-# creste project 
+# create project 
 
 1. npm create vite@latest
 2. Enter the project name
