@@ -3,7 +3,7 @@ function Header(props) {
   
   return (
     <div>
-        <h1>ToDo List</h1>
+        <h1 className="bg-orange-300">ToDo List</h1>
     </div>
   )
 }

@@ -4,13 +4,17 @@ import Content from './components/Content'
 
 function App() {
 
-  let user="valan";
+  let user = "valan";
   return (
-    <>
-     <Header user={user}/>
-     <Footer user={user}/>
-     <Content user={user} />
-    </>
+    <div className='flex justify-center '>
+      <div className='w-1/2 mx-auto border-2'>
+        <Header user={user} />
+        <Content user={user} />
+        <Footer user={user} />
+      </div>
+
+
+    </div>
   )
 }
 

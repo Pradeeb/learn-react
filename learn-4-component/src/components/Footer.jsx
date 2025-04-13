@@ -7,7 +7,7 @@ class Footer extends React.Component{
      console.log(this.props);
      return(
         <>
-            <h2>Footer</h2>
+            <h2 className="bg-orange-300">Footer</h2>
         </>
         )
     }
