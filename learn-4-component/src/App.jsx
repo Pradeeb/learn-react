@@ -5,6 +5,7 @@ import { createContext, useState } from 'react';
 import UseStateLearn from './components/UseStateLearn';
 import ReducerLearn from'./components/ReducerLearn'
 import Test from './components/Test';
+import UseEffectLearn from './components/UseEffectLearn'
 
 export let userContext=createContext();                        {/*Use context api use state pass*/}
 
@@ -26,7 +27,8 @@ function App() {
         {/* <Content user={user} /> */}
         {/* <UseStateLearn/> */}
         {/* <ReducerLearn/> */}
-        <Test/>
+        {/* <Test/> */}
+        <UseEffectLearn/>
         <Footer user={user} />
       </div>
       </userContext.Provider>
