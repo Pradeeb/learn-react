@@ -6,12 +6,10 @@ function UseStateLearn() {
 
     function changeName(){
         setUser("UseState Learn");
-        console.log(user);
         
     }
     function rename(){
         setUser("react");
-        console.log(user);
         
     }
 
