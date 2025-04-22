@@ -3,6 +3,8 @@ import Header from './components/Header';
 import Content from './components/Content'
 import { createContext, useState } from 'react';
 import UseStateLearn from './components/UseStateLearn';
+import ReducerLearn from'./components/ReducerLearn'
+import Test from './components/Test';
 
 export let userContext=createContext();                        {/*Use context api use state pass*/}
 
@@ -22,7 +24,9 @@ function App() {
       <div className='w-1/2 mx-auto border-2'>
         <Header user={user} />                                   {/*user={user} this is props */} 
         {/* <Content user={user} /> */}
-        <UseStateLearn/>
+        {/* <UseStateLearn/> */}
+        {/* <ReducerLearn/> */}
+        <Test/>
         <Footer user={user} />
       </div>
       </userContext.Provider>
