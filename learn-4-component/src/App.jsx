@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Content from './components/Content'
 import { createContext, useState } from 'react';
 import UseStateLearn from './components/UseStateLearn';
-import ReducerLearn from'./components/ReducerLearn'
+import ReducerLearn from'./components/UseReducerLearn'
 import Test from './components/Test';
 import UseEffectLearn from './components/UseEffectLearn'
 import UseMemoLearn from './components/UseMemoLearn'
