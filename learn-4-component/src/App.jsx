@@ -2,11 +2,12 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Content from './components/Content'
 import { createContext, useState } from 'react';
-import UseStateLearn from './components/UseStateLearn';
-import ReducerLearn from'./components/UseReducerLearn'
+import UseStateLearn from './components/hook/UseStateLearn';
+import ReducerLearn from'./components/hook/UseReducerLearn'
 import Test from './components/Test';
-import UseEffectLearn from './components/UseEffectLearn'
-import UseMemoLearn from './components/UseMemoLearn'
+import UseEffectLearn from './components/hook/UseEffectLearn'
+import UseMemoLearn from './components/hook/UseMemoLearn'
+import UseCallBackLearn from './components/hook/UseCallBackLearn';
 
 export let userContext=createContext();                        {/*Use context api use state pass*/}
 
@@ -30,7 +31,8 @@ function App() {
         {/* <ReducerLearn/> */}
         {/* <Test/> */}
         {/* <UseEffectLearn/> */}
-        <UseMemoLearn/>
+        {/* <UseMemoLearn/> */}
+        <UseCallBackLearn/>
         <Footer user={user} />
       </div>
       </userContext.Provider>
