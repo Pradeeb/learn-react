@@ -35,7 +35,8 @@ function App() {
         {/* <UseMemoLearn/> */}
         {/* <UseCallBackLearn/> */}
         {/* <UseRefLearn/> */}
-        <Footer user={user} />
+        {/* <Footer user={user} /> */}
+        
       </div>
       </userContext.Provider>
     </div>
