@@ -13,7 +13,7 @@ const UseStateLearn = () => {
     return (
         <>
             <h3>Click Count : {count}</h3>
-            <button onClick={() => setCount(count + 1)}>Click</button>
+            <button onClick={() => setCount(old =>old + 1)}>Click</button>
             <br />
             <br />
             <input
