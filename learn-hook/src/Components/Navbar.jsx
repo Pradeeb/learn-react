@@ -14,7 +14,7 @@ const Navbar = () => {
                 <Link to='/usestate'>UseState</Link>
             </li>
             <li>
-                 <Link to='/useeffect'>UseEffect</Link>
+                 <Link to='/useeffect'>UseEffect </Link>
             </li>
            </ul>
       </div>
