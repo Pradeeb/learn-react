@@ -9,6 +9,7 @@ import UseEffectLearn from './components/hook/UseEffectLearn'
 import UseMemoLearn from './components/hook/UseMemoLearn'
 import UseCallBackLearn from './components/hook/UseCallBackLearn';
 import UseRefLearn from './components/hook/UseRefLearn';
+import UseLayoutEffect from './components/hook/UseLayoutEffect';
 
 export let userContext=createContext();                        {/*Use context api use state pass*/}
 
@@ -36,6 +37,8 @@ function App() {
         {/* <UseCallBackLearn/> */}
         {/* <UseRefLearn/> */}
         {/* <Footer user={user} /> */}
+        <UseLayoutEffect/>
+        
         
       </div>
       </userContext.Provider>

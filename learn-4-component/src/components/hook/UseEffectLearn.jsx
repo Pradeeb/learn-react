@@ -10,7 +10,7 @@ function UseEffectLearn() {
         console.log(message);
         console.log("count is increased to",count);
         
-       },[count,message]);
+       },[count,message]);  // if we give [] useEffect run on first mound only, without [] give run on every render ,[<Any state name>] when the state change it will run
 
   return (
     <div>
