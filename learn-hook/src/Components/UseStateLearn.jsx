@@ -14,8 +14,8 @@ const UseStateLearn = () => {
         <>
             <h3>Click Count : {count}</h3>
             <button onClick={() => setCount(old =>old + 1)}>Click</button>
-            <br />
-            <br />
+            <br/>
+            <br/>
             <input
                 type="text"
                 onChange={e => inputvalue(e.target.value)}
