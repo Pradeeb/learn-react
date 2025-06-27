@@ -1,27 +1,31 @@
-import React,{useCallback, useState} from 'react'
+import { useCallback, useState } from 'react'
 import Product from './Product'
 
 const UseCallbackLearn = () => {
-    const [product,setProduct]=useState(['product 1','product 2'])
-    const [count,setCount]=useState(0);
-    const [cart,setcart]=useState(0);
-
-    const addToCart = useCallback(() =>{
-        setcart(cart + 1);
-    },[cart]);
+     const [number,setNumber] = useState(0);
+     const [cart,setcart] = useState(0);
+     const [products,setProducts] = useState(["Product 1","Product 2"]);
+     
+     const addToCard = useCallback(()=>{
+        setcart(cart+1);
+     },[cart]);
+     console.log("component render");
+     
   return (
     <div className='body'>
-         <h1>Count : {count}</h1>
-         <button onClick={()=>setCount(count+1)}>Click the button for increate</button>
 
-          <h1>Cart : {cart}</h1>
-    <div >
-        {
-            product.map((curent,index)=>(
-               <Product prod={curent} key={index} addToCart={addToCart}/>
-            ))
-        }
-    </div>
+        <div>
+            <h1>Count of click :{number}</h1>
+            <button onClick={()=> setNumber(number+1)}>click</button>
+
+            <h1>Count of cart :{cart}</h1>
+            {
+                products.map((product,index)=>(
+                 <Product product={product} key={index} addToCard={addToCard}/>
+                ))
+            }
+        </div>
+       
                 <ol className="points">
                 <li><b>useCallback</b> is a React Hook used to memoize <b>function references</b>.</li>
                 <li>It returns a <b>memoized version of the callback function</b> that only changes if its dependencies change.</li>
