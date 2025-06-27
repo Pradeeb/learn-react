@@ -19,9 +19,16 @@ const Navbar = () => {
           <li>
             <Link to='/useeffect'>UseEffect </Link>
           </li>
-                    <li>
+          <li>
+            <Link to='/usememo'>UseMemo </Link>
+          </li>
+          <li>
+            <Link to='/usecalback'>UseCallBack </Link>
+          </li>
+          <li>
             <Link to='/usereducer'>UseReducer </Link>
           </li>
+
         </ul>
       </div>
     </>

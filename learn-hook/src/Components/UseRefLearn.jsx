@@ -23,6 +23,7 @@ const UseRefLearn = () => {
         const getolor = Math.floor(Math.random() * colors.length)
         console.log(getolor);
         pRef.current.style.color = colors[getolor];
+
     }
 
     return (
@@ -30,7 +31,7 @@ const UseRefLearn = () => {
             <button onClick={changecolor} >Change color</button>
             <p ref={pRef}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eveniet iste tenetur dolorem, blanditiis odit eius tempora? Delectus, deleniti dolor ipsa obcaecati eaque adipisci, hic culpa in corporis ea voluptas!</p>
 
-            <ol className="usestate-points">
+            <ol className="points">
 
                 <li>useRef is a React Hook that provides a way to access and persist a mutable reference to a DOM element or value.</li>
                 <li>It returns a ref object: <code>{`const ref = useRef()`}</code>.</li>

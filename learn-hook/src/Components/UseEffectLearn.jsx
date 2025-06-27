@@ -18,7 +18,7 @@ const UseEffectLearn = () => {
         <input type="text" onChange={e => setValue(e.target.value)} />
 
         <div>
-  <ol className="usestate-points">
+  <ol className="points">
     <li>useEffect is a React Hook used for running side effects in components (e.g., fetching data, DOM updates).</li>
     <li>It runs after the component renders.</li>
     <li>useEffect takes two arguments: a callback function and a dependency array.</li>

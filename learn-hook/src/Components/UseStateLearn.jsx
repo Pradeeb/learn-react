@@ -24,7 +24,7 @@ const UseStateLearn = () => {
             <h4>{name}</h4>
 
             <div>
-                <ol className="usestate-points">
+                <ol className="points">
                     <li>It's used for state management in functional components.</li>
                     <li>useState returns an array with two values: [state, setState].</li>
                     <li>Updating state using setState causes the component to re-render.</li>
