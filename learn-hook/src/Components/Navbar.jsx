@@ -17,13 +17,16 @@ const Navbar = () => {
             <Link to='/useref'>UseRef </Link>
           </li>
           <li>
-            <Link to='/useeffect'>UseEffect </Link>
+            <Link to='/useeffect'>UseEffect</Link>
           </li>
           <li>
-            <Link to='/usememo'>UseMemo </Link>
+            <Link to='/usememo'>UseMemo</Link>
           </li>
           <li>
-            <Link to='/usecalback'>UseCallBack </Link>
+            <Link to='/usecalback'>UseCallBack</Link>
+          </li>
+          <li>
+            <Link to='/usecontext'>UseConext</Link>
           </li>
           <li>
             <Link to='/usereducer'>UseReducer </Link>

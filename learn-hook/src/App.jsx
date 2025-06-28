@@ -9,6 +9,7 @@ import UseReducerLearn from './Components/UseReducerLearn'
 import UseRefLearn from './Components/UseRefLearn'
 import UseMemoLearn from './Components/UseMemoLearn'
 import UseCallbackLearn from './Components/UseCallback/UseCallbackLearn'
+import Parent from './Components/UseContext/Parent'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/useref' element={<UseRefLearn />} />
         <Route path='/usememo' element={<UseMemoLearn />} />
         <Route path='/usecalback' element={<UseCallbackLearn />} />
+        <Route path='/usecontext' element={<Parent />} />
       </Routes>
     </Router>
   )
