@@ -31,7 +31,9 @@ const Navbar = () => {
           <li>
             <Link to='/usereducer'>UseReducer </Link>
           </li>
-
+          <li>
+            <Link to='/customhook'>Custom Hook </Link>
+          </li>
         </ul>
       </div>
     </>

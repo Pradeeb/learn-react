@@ -10,6 +10,7 @@ import UseRefLearn from './Components/UseRefLearn'
 import UseMemoLearn from './Components/UseMemoLearn'
 import UseCallbackLearn from './Components/UseCallback/UseCallbackLearn'
 import Parent from './Components/UseContext/Parent'
+import CustomHookTest from './Components/CustomHook/CustomHookTest'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/usememo' element={<UseMemoLearn />} />
         <Route path='/usecalback' element={<UseCallbackLearn />} />
         <Route path='/usecontext' element={<Parent />} />
+         <Route path='/customhook' element={<CustomHookTest />} />
       </Routes>
     </Router>
   )
