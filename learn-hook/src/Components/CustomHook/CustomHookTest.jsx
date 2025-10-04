@@ -1,5 +1,5 @@
 import React from 'react'
-import useCustomHook from './UseCustomHook'
+import useCustomHook from './useCustomHook'
 
 const CustomHookTest = () => {
 
