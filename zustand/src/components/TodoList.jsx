@@ -1,16 +1,20 @@
 import React from 'react'
+import { useStrore } from '../store';
 
 const TodoList = () => {
     
-    const todo=[];
+    const todos=useStrore(state => state.todos);
+    const toggleTodo=useStrore(state => state.toggleTodo);
+    const deleteTodo=useStrore(state => state.deleteTodo)
+
   return (
     <div>
         {
-           todo.map((todo,index)=>(
-            <div>
-                <span className='{}'>{todo.text}</span>
-                <button className='btn stn-success'>Complete</button>
-                <button className='btn btn-danger'>Delete</button>
+           todos.map((todo,index)=>(
+            <div className="todo-item" key={index}>
+                <span className={todo.completed ? "completed":""}>{todo.text}</span>
+                <button className='btn btn-success' disabled={todo.compleded} onClick={()=>toggleTodo(index)}>Complete</button>
+                <button className='btn btn-danger' onClick={()=>deleteTodo(index)}>Delete</button>
             </div>
            ))
            
