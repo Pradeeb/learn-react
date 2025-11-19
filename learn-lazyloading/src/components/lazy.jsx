@@ -1,7 +1,8 @@
 import React from 'react'
 
 const lazy = () => {
-  return (
+
+ return (
     <div>lazy</div>
   )
 }
