@@ -25,6 +25,8 @@ const UseRefLearn = () => {
         pRef.current.style.color = colors[getolor];
 
     }
+    //if we made change compnent don't render
+    console.log("Component render");
 
     return (
         <div className='body'>
