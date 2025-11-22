@@ -12,6 +12,8 @@ const UseEffectLearn = () => {
   useEffect(()=>{
     console.log("run effect");
   },[name])
+  console.log("Component Renderd");
+  
   return (
     <div className='body'>
         <h1>{name}</h1>
