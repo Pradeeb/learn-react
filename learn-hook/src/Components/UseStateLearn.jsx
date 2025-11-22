@@ -8,7 +8,9 @@ const UseStateLearn = () => {
         console.log(value); // Print input value to console
         setName(value);
     }
-    console.log("render the function");
+
+    //every state change compnent render
+    console.log("render the componenent");
 
     return (
         <>
