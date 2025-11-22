@@ -23,6 +23,7 @@ const UseRefLearn = () => {
         const getolor = Math.floor(Math.random() * colors.length)
         console.log(getolor);
         pRef.current.style.color = colors[getolor];
+//      pRef.current.innerHTML="test";
 
     }
     //if we made change compnent don't render
