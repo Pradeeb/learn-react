@@ -11,6 +11,11 @@ const UseEffectLearn = () => {
 
   useEffect(()=>{
     console.log("run effect");
+
+    //the return use for clean up when component un-mounding
+    return ()=>{
+      name
+    }
   },[name])
   console.log("Component Renderd");
   
