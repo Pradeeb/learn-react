@@ -6,6 +6,7 @@ const UseCallbackLearn = () => {
      const [cart,setcart] = useState(0);
      const [products,setProducts] = useState(["Product 1","Product 2"]);
      
+     // useCallback use for avoid recate funtion without any change becase it depend add props function
      const addToCard = useCallback(()=>{
         setcart(cart+1);
      },[cart]);
