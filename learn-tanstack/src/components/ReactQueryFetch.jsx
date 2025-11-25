@@ -14,7 +14,6 @@ function ReactQueryFetch() {
 //        staleTime:10000,           // we can control Fetching time
 //        refetchInterval:1000,      // its give fetching time usecase like share market price update
 //        refetchIntervalInBackground:true  //it's use for another broswer tap the url is fetching it use for setion time decrese HDFC VC model
-        
     })
 
     if(isLoading){

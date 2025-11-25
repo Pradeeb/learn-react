@@ -3,44 +3,48 @@ import axios from 'axios'
 
 function ReqularFetch() {
 
-    const [post,setPost]=useState([]);
-    const [isLoad,setIsLoad]=useState(true);
-    const [error,setError]=useState("");
-    const [isError,setIsError]=useState(false);
+    const [post, setPost] = useState([]);
+    const [isLoad, setIsLoad] = useState(true);
+    const [error, setError] = useState("");
+    const [isError, setIsError] = useState(false);
 
-    const fetchPost=async () =>{
+    const fetchPost = async () => {
         try {
             const response = await axios.get("http://localhost:3001/posts")
             setPost(response.data);
         } catch (error) {
             setError(error);
             setIsError(true)
-        }finally{
+        } finally {
             setIsLoad(false);
         }
     };
-    useEffect(()=>{
-        fetchPost();
-    },[]);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            fetchPost();
+        }, 10000);
 
-    if(isLoad){
+        return () => clearInterval(interval);
+    }, []);
+
+    if (isLoad) {
         return <p>Please wait while loading</p>
     }
-    if(isError){
+    if (isError) {
         return <p>get some error{error}</p>
     }
 
     return (
-    <>
-        <div className='container'>
-            <h3>Reqular</h3>
-            <ul className='posts'>
-            {
-                post.map((post)=>(<li key={post.id} className='post'>{post.title}</li>))
-            }
-            </ul>
-        </div>
-    </>
+        <>
+            <div className='container'>
+                <h3>Reqular</h3>
+                <ul className='posts'>
+                    {
+                        post.map((post) => (<li key={post.id} className='post'>{post.title}</li>))
+                    }
+                </ul>
+            </div>
+        </>
     )
 }
 
