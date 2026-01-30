@@ -17,7 +17,7 @@ const UseMemoLearn = () => {
         <div className='body'>
         
              <h2>{memoMax} is a maximun id {arr}, state change count :{number}</h2>
-             <button onClick={()=>setNumber(number+1)}>change the state</button>
+             <button onClick={()=>setNumber(e=>e+1)}>change the state</button>
 
              <button onClick={()=>setArr([...arr,Math.round(Math.random()+10)])}>change the arr</button>
          

@@ -8,7 +8,7 @@ const UseCallbackLearn = () => {
      
      // useCallback use for avoid recate funtion without any change becase it depend add props function
      const addToCard = useCallback(()=>{
-        setcart(cart+1);
+        setcart(prev=>prev+1);
      },[cart]);
      console.log("component render");
      
