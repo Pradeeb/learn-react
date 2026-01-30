@@ -11,8 +11,8 @@ const LasyComponent = lazy(() =>
 function App() {
 
 const style = {
-  backgroundColor: '#e0e0e0', 
-  maxWidth: '100vw', 
+  backgroundColor: '#e0e0e0',
+  maxWidth: '100vw',
   height: '30px',
   borderRadius:'5px'
 };

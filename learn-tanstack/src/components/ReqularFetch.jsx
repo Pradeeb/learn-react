@@ -19,6 +19,7 @@ function ReqularFetch() {
             setIsLoad(false);
         }
     };
+    
     useEffect(() => {
         const interval = setInterval(() => {
             fetchPost();
