@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>React jsx</h1>
+        <h1>this is a React jsx </h1>
       </div>
     </>
   )
