@@ -13,6 +13,7 @@ function App() {
     <>
       <div>
         <h1>react jsx</h1>
+         <h1>learn react jsx here</h1>
       </div>
     </>
   )
