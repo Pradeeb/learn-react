@@ -13,7 +13,7 @@ function App() {
     <>
       <div>
         <h1>React jsx</h1>
-            <h1>Detached HEAD</h1>
+        <h1>Detached HEAD</h1>
       </div>
     </>
   )
