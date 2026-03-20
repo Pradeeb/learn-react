@@ -10,6 +10,7 @@ const UseCallbackLearn = () => {
      const addToCard = useCallback(()=>{
         setcart(prev=>prev+1);
      },[cart]);
+     
      console.log("component render");
      
   return (
@@ -22,7 +23,7 @@ const UseCallbackLearn = () => {
             <h1>Count of cart :{cart}</h1>
             {
                 products.map((product,index)=>(
-                 <Product product={product} key={index} addToCard={addToCard}/>
+                 <Product key={index} product={product}  addToCard={addToCard}/>
                 ))
             }
         </div>

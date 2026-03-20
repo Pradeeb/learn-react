@@ -26,7 +26,7 @@ function App() {
         <Route path='/usememo' element={<UseMemoLearn />} />
         <Route path='/usecalback' element={<UseCallbackLearn />} />
         <Route path='/usecontext' element={<Parent />} />
-         <Route path='/customhook' element={<CustomHookTest />} />
+        <Route path='/customhook' element={<CustomHookTest />} />
       </Routes>
     </Router>
   )
